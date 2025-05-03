@@ -676,7 +676,7 @@ dependencies = [
 [[package]]
 name = "cdr_decoder"
 version = "0.1.0"
-source = "git+https://github.com/cafalchio/CDR_Decoder.git#25ec8592c6ae5f4c647162fb1444b8c649f187a6"
+source = "git+https://github.com/cafalchio/CDR_Decoder.git#8cc776259ad7d454ef4f21db6c08f5cb4ca7a657"
 dependencies = [
  "flate2",
  "indicatif",
@@ -4601,7 +4601,7 @@ dependencies = [
  "cfg-if",
  "libc",
  "psm",
- "windows-sys 0.52.0",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -5446,7 +5446,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "97fee6b57c6a41524a810daee9286c02d7752c4253064d0b05472833a438f675"
 dependencies = [
  "cfg-if",
- "rand 0.7.3",
+ "rand 0.8.5",
  "static_assertions",
 ]
 

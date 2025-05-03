@@ -676,7 +676,7 @@ dependencies = [
 [[package]]
 name = "cdr_decoder"
 version = "0.1.0"
-source = "git+https://github.com/cafalchio/CDR_Decoder.git#8cc776259ad7d454ef4f21db6c08f5cb4ca7a657"
+source = "git+https://github.com/cafalchio/CDR_Decoder.git#82abbbc15fb9a4932af3a4c27fa9d74565d15a9a"
 dependencies = [
  "flate2",
  "indicatif",
@@ -4865,6 +4865,7 @@ dependencies = [
  "serde_json",
  "tauri",
  "tauri-build",
+ "tauri-plugin-fs",
  "tauri-plugin-opener",
 ]
 
@@ -4946,6 +4947,29 @@ dependencies = [
  "tauri-utils",
  "toml",
  "walkdir",
+]
+
+[[package]]
+name = "tauri-plugin-fs"
+version = "2.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "88371e340ad2f07409a3b68294abe73f20bc9c1bc1b631a31dc37a3d0161f682"
+dependencies = [
+ "anyhow",
+ "dunce",
+ "glob",
+ "percent-encoding",
+ "schemars",
+ "serde",
+ "serde_json",
+ "serde_repr",
+ "tauri",
+ "tauri-plugin",
+ "tauri-utils",
+ "thiserror 2.0.12",
+ "toml",
+ "url",
+ "uuid",
 ]
 
 [[package]]

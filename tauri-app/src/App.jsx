@@ -9,7 +9,7 @@ function App() {
 
   async function greet() {
     // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-    setGreetMsg(await invoke("greet", { name }));
+    setGreetMsg(await invoke("run_extraction", { name }));
   }
 
   return (
@@ -39,9 +39,9 @@ function App() {
         <input
           id="greet-input"
           onChange={(e) => setName(e.currentTarget.value)}
-          placeholder="Enter a name..."
+          placeholder="Enter a full file path name..."
         />
-        <button type="submit">Greet</button>
+        <button type="submit">Extract</button>
       </form>
       <p>{greetMsg}</p>
     </main>
